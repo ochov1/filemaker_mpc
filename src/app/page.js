@@ -81,6 +81,7 @@ export default function Home() {
 
   return (
     <main className="bg-light">
+
       <section className="bg-dark text-white py-5">
         <div className="container py-5">
           <div className="row align-items-center g-4">
@@ -139,13 +140,13 @@ export default function Home() {
         <div className="container">
           <div className="row align-items-center g-5">
             <div className="col-lg-6">
-              <h2 className="fw-bold mb-3">What is the MPC Server?</h2>
-              <p className="fs-5">
+              <h2 className="fw-bold mb-3 text-black">What is the MPC Server?</h2>
+              <p className="fs-5 text-black-50">
                 The FileMaker Message Processing Controller (MPC) is a middleware layer
                 that brokers real-time communication between FileMaker Server and any
                 number of connected applications.
               </p>
-              <p className="fs-5">
+              <p className="fs-5 text-black-50">
                 MPC taps into FileMaker webhooks, script triggers, and data APIs to
                 publish events, receive commands, and orchestrate responses. Developers
                 get a unified hub for automations, dashboards, mobile apps, and AI
@@ -195,12 +196,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="architecture" className="py-5 bg-body-secondary">
+      <section id="architecture" className="py-5 bg-body-secondary ">
         <div className="container">
           <div className="row g-5 align-items-center">
             <div className="col-lg-6">
-              <h2 className="fw-bold mb-4">Architecture &amp; data flow</h2>
-              <p className="fs-5">
+              <h2 className="fw-bold mb-4 text-black">Architecture &amp; data flow</h2>
+              <p className="fs-5 text-muted">
                 MPC sits between your FileMaker databases and the outside world. Clients
                 connect via WebSockets or HTTP APIs, while FileMaker communicates using
                 webhooks, custom scripts, and scheduled jobs.
@@ -256,7 +257,7 @@ export default function Home() {
 
       <section id="features" className="py-5">
         <div className="container">
-          <h2 className="fw-bold mb-5 text-center">Features &amp; benefits</h2>
+          <h2 className="fw-bold mb-5 text-center text-muted">Features &amp; benefits</h2>
           <div className="row g-4">
             {features.map((feature) => (
               <div className="col-lg-3 col-sm-6" key={feature.title}>
@@ -276,7 +277,7 @@ export default function Home() {
         <div className="container">
           <div className="row g-5">
             <div className="col-lg-7">
-              <h2 className="fw-bold mb-4">Setup &amp; installation guide</h2>
+              <h2 className="fw-bold mb-4 text-black-50">Setup &amp; installation guide</h2>
               <ol className="list-group list-group-numbered">
                 {setupSteps.map((step, index) => (
                   <li className="list-group-item" key={index}>
@@ -309,8 +310,8 @@ export default function Home() {
         <div className="container">
           <div className="row g-5 align-items-start">
             <div className="col-lg-6">
-              <h2 className="fw-bold mb-4">Integrating MPC with FileMaker</h2>
-              <p className="fs-5">
+              <h2 className="fw-bold mb-4 text-black">Integrating MPC with FileMaker</h2>
+              <p className="fs-5 text-black-50">
                 Developers extend FileMaker by pointing layouts, scripts, or schedules at
                 MPC endpoints. MPC normalizes inbound data, invokes FileMaker scripts via
                 Data API, and streams results back to clients instantly.
@@ -343,8 +344,8 @@ export default function Home() {
         <div className="container">
           <div className="row g-5 align-items-center">
             <div className="col-lg-6">
-              <h2 className="fw-bold mb-3">Demo &amp; proof of concept</h2>
-              <p className="fs-5">
+              <h2 className="fw-bold mb-3 text-black">Demo &amp; proof of concept</h2>
+              <p className="fs-5 text-black-50">
                 Explore how MPC keeps a FileMaker-powered fulfillment system in sync.
                 The live demo shows real-time order creation, status updates, and AI-generated
                 summaries triggered by workflow events.
@@ -370,7 +371,7 @@ export default function Home() {
 
       <section id="faq" className="py-5">
         <div className="container">
-          <h2 className="fw-bold mb-4 text-center">Frequently asked questions</h2>
+          <h2 className="fw-bold mb-4 text-center text-black">Frequently asked questions</h2>
           <div className="accordion" id="faqAccordion">
             {faqs.map((item, index) => {
               const headingId = `heading-${index}`;
